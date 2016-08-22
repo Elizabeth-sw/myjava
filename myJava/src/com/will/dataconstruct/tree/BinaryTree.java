@@ -90,6 +90,32 @@ public class BinaryTree {
 		
 	}
 	
+	public void remove(int value){
+		if(root == null){
+			System.err.println("this biTree is empty!");
+			return;
+		}
+		
+		if(root.value == value){
+			root = null;
+			return;
+		}
+		
+		
+	}
+	
+	private void remove(Node parent, Node node, int value){
+		if(node.value == value){
+			if(node.left == null && node.right == null){
+				node = null;
+				return;
+			} 
+//			if(){
+//				
+//			}
+		}
+	}
+	
 	private Node save(Node node, Node parent){
 		if(node.value > parent.value){
 			if(parent.right == null){
